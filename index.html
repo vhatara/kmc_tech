@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Web Implementation Architect Project Assessment</title>
+</head>
+<body>
+    <div class="container flex-row">
+
+        <div class="search_filter">
+            <div class="search flex-row">
+                <input type="text" class="search_bar" id="search" name="search" placeholder="Search place">
+                <input type="button" class="search_btn" id="search" name="search" value="Search">
+            </div>
+
+            <div class="filter flex-row">
+                <select class="dropdown" name="places" id="places">
+                    <option value="Place 1">Place 1</option>
+                    <option value="Place 2">Place 2</option>
+                    <option value="Place 3">Place 3</option>
+                    <option value="Place 4">Place 4</option>
+                    <option value="Place 5">Place 5</option>
+                </select>
+
+                <button class="filter_btn" id="filter_btn">
+                    <img src="./demo-locator-images/funnel-fill.svg">
+                </button>
+            </div>
+
+            <div class="view_container flex-row">
+                <div class="view_button active" id="list_view">
+                    List View
+                </div>
+
+                <div class="view_button" id="map_view">
+                    Map View
+                </div>
+            </div>
+
+            <div class="map_mobile" id="map_mobile">
+            </div>
+
+            <div class="location_desc" id="location_desc" >There are <span id="location_count"></span> locations near you</div>
+            <div id="location_info">
+                <div class="locations_list" id="locationsList">
+                </div>
+            </div>
+
+            <div class="filters_container flex-column" id="filters_container">
+                <div class="filter_option flex-row">
+                    <img class="icon_bag" src="./demo-locator-images/icons8-bag-90.png">
+                    <p>Retail</p>
+                </div>
+
+                <div class="filter_option flex-row">
+                    <img class="icon_bag" src="./demo-locator-images/icons8-building-75.png">
+                    <p>Outlet</p>
+                </div>
+
+                <div class="filter_option flex-row">
+                    <img class="icon_bag" src="./demo-locator-images/icons8-factory-100.png">
+                    <p>Factory</p>
+                </div>
+
+                <div class="filter_option flex-row">
+                    <img class="icon_bag" src="./demo-locator-images/icons8-announcement-96.png">
+                    <p>Promotion</p>
+                </div>
+
+                <div class="closefilter_container">
+                    <button class="close_filters" id="close_filters">Close Filters</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="map" id="map">
+            <img src="map_mock.png" alt="map" >
+        </div>
+
+        
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
