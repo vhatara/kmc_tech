@@ -190,7 +190,10 @@ list_view.addEventListener('click', () => {
     filters_container.style.display='none';
     map_mobile.style.display = 'none';
     isOnListView = true;
-    console.log('nasa list biewm ka');
+    location_desc.innerHTML= "There are <span id='location_count'></span> locations near you"
+    const location_count = document.getElementById('location_count');
+    location_count.innerHTML = locations_data.length;
+    location_desc.style.textAlign = 'center'
 })
 
 map_view.addEventListener('click', () => {
